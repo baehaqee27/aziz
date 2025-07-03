@@ -5,7 +5,6 @@ import { db } from "../../lib/firebase";
 import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { Calendar, Clock } from "lucide-react";
-import LayoutWithHeaderSidebar from "../../components/LayoutWithHeaderSidebar";
 
 interface NewsArticle {
   id: string;

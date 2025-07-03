@@ -5,7 +5,6 @@ import { db } from "../../../lib/firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { useRouter, useParams } from "next/navigation";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
-import LayoutWithHeaderSidebar from "../../../components/LayoutWithHeaderSidebar";
 
 interface NewsArticle {
   id: string;
@@ -64,18 +63,16 @@ export default function NewsDetailPage() {
 
   if (error || !article) {
     return (
-      <LayoutWithHeaderSidebar>
-        <div className="p-6 bg-gradient-to-b from-teal-50 to-teal-100 min-h-screen flex flex-col items-center justify-center">
-          <p className="text-red-600 text-lg font-medium mb-4">{error}</p>
-          <button
-            onClick={handleBack}
-            className="flex items-center bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition-colors"
-          >
-            <ArrowLeft className="mr-2" size={18} />
-            Kembali ke Daftar Berita
-          </button>
-        </div>
-      </LayoutWithHeaderSidebar>
+      <div className="p-6 bg-gradient-to-b from-teal-50 to-teal-100 min-h-screen flex flex-col items-center justify-center">
+        <p className="text-red-600 text-lg font-medium mb-4">{error}</p>
+        <button
+          onClick={handleBack}
+          className="flex items-center bg-teal-600 text-white px-4 py-2 rounded-md hover:bg-teal-700 transition-colors"
+        >
+          <ArrowLeft className="mr-2" size={18} />
+          Kembali ke Daftar Berita
+        </button>
+      </div>
     );
   }
 
