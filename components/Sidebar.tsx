@@ -21,7 +21,7 @@ const Sidebar = () => {
   const toggleAdministrasi = () => setIsAdministrasiOpen(!isAdministrasiOpen);
 
   return (
-    <div className="bg-teal-800 text-white w-64 h-full shadow-md overflow-y-auto">
+    <div className="bg-teal-800 text-white w-64 h-full shadow-md overflow-y-auto pb-24">
       <div className="mx-6 w-48 h-24 rounded-md flex items-center justify-center">
         <img
           src="/logo.png"
@@ -51,106 +51,108 @@ const Sidebar = () => {
               <ChevronRight className="ml-auto" size={16} />
             )}
           </button>
-          {isAnggotaOpen && (
-            <div className="ml-6 border-l-2 border-teal-700">
-              <Link
-                href="/anggota/pac-ipnu-ippnu-bulu"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PAC IPNU IPPNU Bulu
-              </Link>
-              <Link
-                href="/anggota/pr-cabean-kidul"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Cabean Kidul
-              </Link>
-              <Link
-                href="/anggota/pr-warugunung"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Warugunung
-              </Link>
-              <Link
-                href="/anggota/pr-lambangan-kulon"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Lambangan Kulon
-              </Link>
-              <Link
-                href="/anggota/pr-lambangan-wetan"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Lambangan Wetan
-              </Link>
-              <Link
-                href="/anggota/pr-karangasem"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Karangasem
-              </Link>
-              <Link
-                href="/anggota/pr-pondokrejo"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Pondokrejo
-              </Link>
-              <Link
-                href="/anggota/pr-sendangmulyo"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Sendangmulyo
-              </Link>
-              <Link
-                href="/anggota/pr-sumbermolyo"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Sumbermolyo
-              </Link>
-              <Link
-                href="/anggota/pr-pasedan"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Pasedan
-              </Link>
-              <Link
-                href="/anggota/pr-kadiwono"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Kadiwono
-              </Link>
-              <Link
-                href="/anggota/pr-jukung"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Jukung
-              </Link>
-              <Link
-                href="/anggota/pr-mlatirejo"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Mlatirejo
-              </Link>
-              <Link
-                href="/anggota/pr-ngulan"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Ngulan
-              </Link>
-              <Link
-                href="/anggota/pr-bulu"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Bulu
-              </Link>
-              <Link
-                href="/anggota/pr-matingan"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                PR. IPNU IPPNU Ds. Matingan
-              </Link>
-            </div>
-          )}
+          <div
+            className={`ml-6 border-l-2 border-teal-700 overflow-hidden transition-all duration-300 ease-in-out ${
+              isAnggotaOpen ? "max-h-[500px] overflow-y-auto" : "max-h-0"
+            }`}
+          >
+            <Link
+              href="/anggota/pac-ipnu-ippnu-bulu"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PAC IPNU IPPNU Bulu
+            </Link>
+            <Link
+              href="/anggota/pr-cabean-kidul"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Cabean Kidul
+            </Link>
+            <Link
+              href="/anggota/pr-warugunung"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Warugunung
+            </Link>
+            <Link
+              href="/anggota/pr-lambangan-kulon"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Lambangan Kulon
+            </Link>
+            <Link
+              href="/anggota/pr-lambangan-wetan"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Lambangan Wetan
+            </Link>
+            <Link
+              href="/anggota/pr-karangasem"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Karangasem
+            </Link>
+            <Link
+              href="/anggota/pr-pondokrejo"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Pondokrejo
+            </Link>
+            <Link
+              href="/anggota/pr-sendangmulyo"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Sendangmulyo
+            </Link>
+            <Link
+              href="/anggota/pr-sumbermulyo"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Sumbermulyo
+            </Link>
+            <Link
+              href="/anggota/pr-pasedan"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Pasedan
+            </Link>
+            <Link
+              href="/anggota/pr-kadiwono"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Kadiwono
+            </Link>
+            <Link
+              href="/anggota/pr-jukung"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Jukung
+            </Link>
+            <Link
+              href="/anggota/pr-mlatirejo"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Mlatirejo
+            </Link>
+            <Link
+              href="/anggota/pr-ngulan"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Ngulan
+            </Link>
+            <Link
+              href="/anggota/pr-bulu"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Bulu
+            </Link>
+            <Link
+              href="/anggota/pr-matingan"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              PR. IPNU IPPNU Ds. Matingan
+            </Link>
+          </div>
         </div>
 
         <div>
@@ -166,34 +168,36 @@ const Sidebar = () => {
               <ChevronRight className="ml-auto" size={16} />
             )}
           </button>
-          {isAdministrasiOpen && (
-            <div className="ml-6 border-l-2 border-teal-700">
-              <Link
-                href="/administrasi/contoh-pengajuan-sp"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                Contoh Pengajuan SP Pimpinan Ranting
-              </Link>
-              <Link
-                href="/administrasi/download-kop-surat-logo"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                Download KOP Surat dan Logo
-              </Link>
-              <Link
-                href="/administrasi/download-mars"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                Download Mars
-              </Link>
-              <Link
-                href="/administrasi/download-materi"
-                className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
-              >
-                Download Materi
-              </Link>
-            </div>
-          )}
+          <div
+            className={`ml-6 border-l-2 border-teal-700 overflow-hidden transition-all duration-300 ease-in-out ${
+              isAdministrasiOpen ? "max-h-[500px]" : "max-h-0"
+            }`}
+          >
+            <Link
+              href="/administrasi/contoh-pengajuan-sp"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              Contoh Pengajuan SP Pimpinan Ranting
+            </Link>
+            <Link
+              href="/administrasi/download-kop-surat-logo"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              Download KOP Surat dan Logo
+            </Link>
+            <Link
+              href="/administrasi/download-mars"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              Download Mars
+            </Link>
+            <Link
+              href="/administrasi/download-materi"
+              className="block px-4 py-2 hover:bg-teal-700 transition-colors text-sm"
+            >
+              Download Materi
+            </Link>
+          </div>
         </div>
 
         <Link

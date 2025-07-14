@@ -1,14 +1,14 @@
 import React from "react";
 
-export default function PrLambanganWetanPage() {
+const PRSumbermulyo = () => {
   return (
     <div className="p-6 bg-gradient-to-b from-teal-50 to-teal-100 min-h-screen">
       <h1 className="text-3xl font-extrabold mb-2 text-center text-teal-800 tracking-tight">
-        SUSUNAN PENGURUS PIMPINAN RANTING IPNU IPPNU DESA LAMBANGAN WETAN KEC.
-        BULU KAB REMBANG
+        SUSUNAN PENGURUS PIMPINAN RANTING IPNU IPPNU DESA SUMBERMULYO KEC. BULU
+        KAB REMBANG
       </h1>
       <p className="mb-8 text-center text-teal-600 font-medium max-w-2xl mx-auto">
-        MASA KHITMAD 2025 – 2027
+        MASA KHIDMAT 2025 – 2027
       </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
@@ -24,10 +24,10 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Kepala Desa Lambangan Wetan
+                  Kepala Desa Sumbermulyo
                 </li>
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  NU Ranting Desa Lambangan Wetan
+                  NU Ranting Desa Sumbermulyo
                 </li>
               </ul>
             </div>
@@ -50,7 +50,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  M. Chasan Isa Annaqib
+                  Nico Alfiansyah
                 </li>
               </ul>
             </div>
@@ -60,7 +60,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  M. Yhuda Eka Saputra
+                  Rafif Baehaqi
                 </li>
               </ul>
             </div>
@@ -70,7 +70,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  M. Yahya Febrianto
+                  M. Ilham Khoirul A
                 </li>
               </ul>
             </div>
@@ -93,10 +93,10 @@ export default function PrLambanganWetanPage() {
                   <strong className="text-teal-700">Organisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Matla Al-fajri
+                      M. Salman Maulana B
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      M. Hidayatul Mustafid
+                      Ramadhani Hidayatullah Al-Aza
                     </li>
                   </ul>
                 </div>
@@ -104,7 +104,10 @@ export default function PrLambanganWetanPage() {
                   <strong className="text-teal-700">Kaderisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      A. Dhito Wijaya
+                      Rizqi Dwi Kurniawan
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Muhammad Nizam Khoiruddin
                     </li>
                   </ul>
                 </div>
@@ -112,15 +115,10 @@ export default function PrLambanganWetanPage() {
                   <strong className="text-teal-700">Minat Bakat:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Maulana Dafin Febriansyah
+                      Muhammad Wildan Musthofa
                     </li>
-                  </ul>
-                </div>
-                <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Kominfo:</strong>
-                  <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Kaffa Bihi Ramadhani
+                      Ahmad Muzakki Abdul Latif
                     </li>
                   </ul>
                 </div>
@@ -141,10 +139,10 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Kepala Desa Lambangan Wetan
+                  Kepala Desa Sumbermulyo
                 </li>
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  NU Ranting Desa Lambangan Wetan
+                  NU Ranting Desa Sumbermulyo
                 </li>
               </ul>
             </div>
@@ -167,7 +165,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Siti Salma Agustina
+                  Ela Nur Latifah
                 </li>
               </ul>
             </div>
@@ -177,7 +175,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Siti Nailatun Ni’mah
+                  Nayla Nur F
                 </li>
               </ul>
             </div>
@@ -187,7 +185,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Nur Widyaningsih Arumdani
+                  Maya Az Zahra
                 </li>
               </ul>
             </div>
@@ -197,7 +195,7 @@ export default function PrLambanganWetanPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  Khoirin Suci Wahyuni
+                  Nafis Choirul Ummah
                 </li>
               </ul>
             </div>
@@ -210,13 +208,10 @@ export default function PrLambanganWetanPage() {
                   <strong className="text-teal-700">Organisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Ririn Febriyanti
+                      Sonia Mahmuda Faradiba
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Putri Nur Latifah
-                    </li>
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Siti Nur Kholifah
+                      Sabila Aulia A
                     </li>
                   </ul>
                 </div>
@@ -228,9 +223,6 @@ export default function PrLambanganWetanPage() {
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
                       Siti Zahrotul Isnaini
-                    </li>
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      Siti Nur Aisyah
                     </li>
                   </ul>
                 </div>
@@ -263,4 +255,6 @@ export default function PrLambanganWetanPage() {
       </div>
     </div>
   );
-}
+};
+
+export default PRSumbermulyo;
