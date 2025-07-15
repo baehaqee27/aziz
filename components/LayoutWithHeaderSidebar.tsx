@@ -35,7 +35,7 @@ const LayoutWithHeaderSidebar = ({
             </svg>
           </button>
         </div>
-        <h1 className="text-xl font-bold">PAC IPNU IPPNU Bulu</h1>
+        <h1 className="text-xl font-bold">PELAJARNUBULU.SITE</h1>
       </header>
 
       {/* Main Content */}
