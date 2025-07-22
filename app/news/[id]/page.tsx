@@ -4,7 +4,17 @@ import React, { useState, useEffect } from "react";
 import { db } from "../../../lib/firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { useRouter, useParams } from "next/navigation";
-import { Calendar, Clock, ArrowLeft } from "lucide-react";
+import { Calendar, Clock, ArrowLeft, Copy, Check, Share2 } from "lucide-react";
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  LinkedinShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  WhatsappIcon,
+  LinkedinIcon,
+} from "react-share";
 
 interface NewsArticle {
   id: string;
@@ -24,7 +34,16 @@ export default function NewsDetailPage() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // State untuk URL halaman saat ini dan status penyalinan
+  const [currentUrl, setCurrentUrl] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
+
   useEffect(() => {
+    // Pastikan kode ini hanya berjalan di sisi klien
+    if (typeof window !== "undefined") {
+      setCurrentUrl(window.location.href);
+    }
+
     const fetchArticle = async () => {
       setLoading(true);
       setError(null);
@@ -53,6 +72,17 @@ export default function NewsDetailPage() {
     router.back();
   };
 
+  // Fungsi untuk menyalin URL ke clipboard
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(currentUrl).then(() => {
+      setIsCopied(true);
+      // Reset status setelah 2 detik
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    });
+  };
+
   if (loading) {
     return (
       <div className="p-6 bg-gradient-to-b from-teal-50 to-teal-100 min-h-screen flex items-center justify-center">
@@ -76,7 +106,6 @@ export default function NewsDetailPage() {
     );
   }
 
-  // Convert content to preserve line breaks
   const contentWithBreaks = article.content.split("\n").map((line, index) => (
     <React.Fragment key={index}>
       {line}
@@ -123,7 +152,55 @@ export default function NewsDetailPage() {
           {contentWithBreaks}
         </div>
 
-        <div className="flex items-center text-gray-500 text-sm border-t border-gray-200 pt-4">
+        {/* --- Bagian Tombol Share dan Copy Link --- */}
+        <div className="border-t border-gray-200 pt-4">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <Share2 className="text-gray-600" size={20} />
+              <span className="text-gray-700 font-semibold">Bagikan:</span>
+              <TwitterShareButton url={currentUrl} title={article.title}>
+                <TwitterIcon size={32} round />
+              </TwitterShareButton>
+              <FacebookShareButton url={currentUrl} hashtag={"#BeritaTerkini"}>
+                <FacebookIcon size={32} round />
+              </FacebookShareButton>
+              <WhatsappShareButton url={currentUrl} title={article.title}>
+                <WhatsappIcon size={32} round />
+              </WhatsappShareButton>
+              <LinkedinShareButton
+                url={currentUrl}
+                title={article.title}
+                summary={article.content.substring(0, 100)}
+              >
+                <LinkedinIcon size={32} round />
+              </LinkedinShareButton>
+            </div>
+
+            <button
+              onClick={handleCopyLink}
+              className={`flex items-center justify-center px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                isCopied
+                  ? "bg-green-600 text-white"
+                  : "bg-gray-200 text-gray-800 hover:bg-gray-300"
+              }`}
+            >
+              {isCopied ? (
+                <>
+                  <Check className="mr-2" size={16} />
+                  Tersalin!
+                </>
+              ) : (
+                <>
+                  <Copy className="mr-2" size={16} />
+                  Salin Tautan
+                </>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* --- Bagian Info Penulis dan Tanggal --- */}
+        <div className="flex items-center text-gray-500 text-sm border-t border-gray-200 mt-4 pt-4">
           <Calendar className="mr-1" size={16} />
           <span className="mr-4">{article.date}</span>
           <Clock className="mr-1" size={16} />
