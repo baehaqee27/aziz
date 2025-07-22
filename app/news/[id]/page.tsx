@@ -3,14 +3,6 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../../lib/firebase";
 import NewsDetailClient from "./NewsDetailClient";
 
-export const dynamic = "force-dynamic";
-
-type PageProps = {
-  params: {
-    id: string;
-  };
-};
-
 interface NewsArticle {
   id: string;
   title: string;
@@ -20,6 +12,8 @@ interface NewsArticle {
   author: string;
   location: string;
 }
+
+export const dynamic = "force-dynamic";
 
 export async function generateStaticParams() {
   return [];
@@ -39,9 +33,13 @@ async function getArticleData(id: string): Promise<NewsArticle | null> {
   }
 }
 
-export async function generateMetadata(props: PageProps): Promise<Metadata> {
-  // PERBAIKAN FINAL: Langsung gunakan props.params.id di dalam fungsi
-  const article = await getArticleData(props.params.id);
+// PERBAIKAN: Gunakan tipe inline standar Next.js
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  const article = await getArticleData(params.id);
 
   if (!article) {
     return { title: "Artikel Tidak Ditemukan" };
@@ -77,9 +75,13 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   };
 }
 
-export default async function NewsDetailPage(props: PageProps) {
-  // PERBAIKAN FINAL: Langsung gunakan props.params.id di dalam fungsi
-  const article = await getArticleData(props.params.id);
+// PERBAIKAN: Gunakan tipe inline standar Next.js
+export default async function NewsDetailPage({
+  params,
+}: {
+  params: { id: string };
+}) {
+  const article = await getArticleData(params.id);
 
   return <NewsDetailClient article={article} />;
 }
