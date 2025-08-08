@@ -8,24 +8,25 @@ export default function PacIpnuIppnuBuluPage() {
         PAC IPNU IPPNU Bulu
       </h1>
       <p className="mb-8 text-center text-teal-600 font-medium max-w-2xl mx-auto">
-        Berikut adalah struktur organisasi PAC IPNU IPPNU Bulu yang terbagi
-        menjadi dua bagian, yaitu IPNU dan IPPNU.
+        Berikut adalah struktur organisasi Pimpinan Anak Cabang IPNU IPPNU
+        Kecamatan Bulu, Kabupaten Rembang, Masa Khidmat 2023 - 2025.
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl mx-auto">
         {/* IPNU Section */}
         <div className="bg-white p-6 rounded-2xl shadow-lg border border-teal-200 hover:shadow-xl transition-all duration-300">
           <h2 className="text-2xl font-bold mb-5 text-center text-teal-700 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-teal-500 after:mx-auto after:mt-2">
             IPNU (Ikatan Pelajar Nahdlatul Ulama)
           </h2>
           <div className="space-y-5 text-teal-900">
+            {/* BPH IPNU */}
             <div className="group">
               <strong className="block text-lg font-semibold text-teal-800 mb-1 group-hover:text-teal-600 transition-colors duration-200">
                 Ketua:
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Ketua]
+                  Muhammad Azka Aziz
                 </li>
               </ul>
             </div>
@@ -35,7 +36,7 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Wakil Ketua]
+                  Muahmmad Fachrizal Misbahuddin
                 </li>
               </ul>
             </div>
@@ -45,10 +46,7 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Sekretaris 1]
-                </li>
-                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Sekretaris 2]
+                  Muhammad Nashuikhul Ibadllah
                 </li>
               </ul>
             </div>
@@ -58,13 +56,12 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Bendahara 1]
-                </li>
-                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Bendahara 2]
+                  Muhammad Alwi Rozikin
                 </li>
               </ul>
             </div>
+
+            {/* Departemen IPNU */}
             <div className="group">
               <strong className="block text-lg font-semibold text-teal-800 mb-2 group-hover:text-teal-600 transition-colors duration-200">
                 Departemen – Departemen:
@@ -74,13 +71,13 @@ export default function PacIpnuIppnuBuluPage() {
                   <strong className="text-teal-700">Dpt. Organisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Muhammad Nur Rojabiana Munfiqon (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Muhammad Dimas Saputra
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Ahmad Miftah Nasirudin
                     </li>
                   </ul>
                 </div>
@@ -88,55 +85,86 @@ export default function PacIpnuIppnuBuluPage() {
                   <strong className="text-teal-700">Dpt. Kaderisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      M. Chasan Isa A (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Muhammad Dzikrullohi Akbar
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
-                    </li>
-                  </ul>
-                </div>
-                <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. Kominfo:</strong>
-                  <ul className="list-disc list-inside ml-3">
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Rendi Ahmad Fawzi
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
-                    </li>
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Ahmad Heru Hariyanto
                     </li>
                   </ul>
                 </div>
                 <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. Minat Bakat:</strong>
+                  <strong className="text-teal-700">
+                    Dpt. Jaringan Pesantren, Sekolah & PT:
+                  </strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Abdul Mufid (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Muhammad Dwi Ardiyansah
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Mohammad Akbar Abada
                     </li>
                   </ul>
                 </div>
                 <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. JSP:</strong>
+                  <strong className="text-teal-700">
+                    Dpt. Komunikasi & Informasi:
+                  </strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Yoga Ananda Siswanto (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      M. Habib Taufiq Alula
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      M. Falikhul Isbah
+                    </li>
+                  </ul>
+                </div>
+                <div className="border-l-4 border-teal-400 pl-3">
+                  <strong className="text-teal-700">
+                    Dpt. Minat, Bakat & Olahraga:
+                  </strong>
+                  <ul className="list-disc list-inside ml-3">
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Muhammad Rifki Iqballuhur (Koord.)
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Izzat Hilmi
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      M Habib Taufiq Alula
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Lembaga IPNU */}
+            <div className="group">
+              <strong className="block text-lg font-semibold text-teal-800 mb-2 group-hover:text-teal-600 transition-colors duration-200">
+                Lembaga:
+              </strong>
+              <div className="mt-2 space-y-4 text-base">
+                <div className="border-l-4 border-teal-400 pl-3">
+                  <strong className="text-teal-700">
+                    CBP (Corp Brigade Pembangunan):
+                  </strong>
+                  <ul className="list-disc list-inside ml-3">
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Komandan: Ahmad Yugafaniarga
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Wakil Komandan: Hendri Rudianto
                     </li>
                   </ul>
                 </div>
@@ -150,14 +178,15 @@ export default function PacIpnuIppnuBuluPage() {
           <h2 className="text-2xl font-bold mb-5 text-center text-teal-700 relative after:content-[''] after:block after:w-16 after:h-1 after:bg-teal-500 after:mx-auto after:mt-2">
             IPPNU (Ikatan Pelajar Putri Nahdlatul Ulama)
           </h2>
-          <div className="space-y-5 text-teal-900">
+          <div className="space-y-5 text-gray-900">
+            {/* BPH IPPNU */}
             <div className="group">
               <strong className="block text-lg font-semibold text-teal-800 mb-1 group-hover:text-teal-600 transition-colors duration-200">
                 Ketua:
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Ketua]
+                  Sonia Mufliha Bilqis
                 </li>
               </ul>
             </div>
@@ -167,7 +196,19 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Wakil Ketua]
+                  Nur Kholishotun N (Wakil Ketua I)
+                </li>
+                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                  Hilda Rahmawati F (Wakil Ketua II)
+                </li>
+                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                  Alfiqoh Raihani F.N (Wakil Ketua III)
+                </li>
+                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                  Nia Ayu Fatmaningsih (Wakil Ketua IV)
+                </li>
+                <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                  Titin Khusnul Anggraini (Wakil Ketua V)
                 </li>
               </ul>
             </div>
@@ -177,10 +218,10 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Sekretaris 1]
+                  Sri Indah Utami
                 </li>
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Sekretaris 2]
+                  Eva Nur Rohmah (Wakil Sekretaris)
                 </li>
               </ul>
             </div>
@@ -190,13 +231,15 @@ export default function PacIpnuIppnuBuluPage() {
               </strong>
               <ul className="list-disc list-inside ml-3 text-base">
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Bendahara 1]
+                  Zulia Dwi Anggreini
                 </li>
                 <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                  [Nama Bendahara 2]
+                  Lailatul Afiah (Wakil Bendahara)
                 </li>
               </ul>
             </div>
+
+            {/* Departemen IPPNU */}
             <div className="group">
               <strong className="block text-lg font-semibold text-teal-800 mb-2 group-hover:text-teal-600 transition-colors duration-200">
                 Departemen – Departemen:
@@ -206,13 +249,16 @@ export default function PacIpnuIppnuBuluPage() {
                   <strong className="text-teal-700">Dpt. Organisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Siti Musfi Rotul J. (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Nurul Hidayah
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Siti Nur Laela Alea K.S.
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siti Choiriyah
                     </li>
                   </ul>
                 </div>
@@ -220,55 +266,114 @@ export default function PacIpnuIppnuBuluPage() {
                   <strong className="text-teal-700">Dpt. Kaderisasi:</strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Rosa Fadhilatu I. (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Tia Eka Rahmawati
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
-                    </li>
-                  </ul>
-                </div>
-                <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. Kominfo:</strong>
-                  <ul className="list-disc list-inside ml-3">
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Yulia Citra Puspitasari
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
-                    </li>
-                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Latifatun Nisa
                     </li>
                   </ul>
                 </div>
                 <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. Minat Bakat:</strong>
+                  <strong className="text-teal-700">
+                    Dpt. Jaringan Pesantren, Sekolah & PT:
+                  </strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Ummi Qona'ah (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Wahyu Maghfiroh
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Dani Novita Sari
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siti Naylatun Ni'mah
                     </li>
                   </ul>
                 </div>
                 <div className="border-l-4 border-teal-400 pl-3">
-                  <strong className="text-teal-700">Dpt. JSP:</strong>
+                  <strong className="text-teal-700">
+                    Dpt. Komunikasi & Informasi:
+                  </strong>
                   <ul className="list-disc list-inside ml-3">
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 1]
+                      Siti Laeli Mufarikhah (Koord.)
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 2]
+                      Neza Khoirin Ni'mah
                     </li>
                     <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
-                      [Nama Anggota 3]
+                      Sayyidatunnisak
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Salma Dian Rifani
+                    </li>
+                  </ul>
+                </div>
+                <div className="border-l-4 border-teal-400 pl-3">
+                  <strong className="text-teal-700">
+                    Dpt. Minat, Bakat & Olahraga:
+                  </strong>
+                  <ul className="list-disc list-inside ml-3">
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siyah Ayu Puji Lestari (Koord.)
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Shafira Nur Maulana N.
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Ummi Choirina A. N.
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siti Muntafiah
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Lembaga IPPNU */}
+            <div className="group">
+              <strong className="block text-lg font-semibold text-teal-800 mb-2 group-hover:text-teal-600 transition-colors duration-200">
+                Lembaga:
+              </strong>
+              <div className="mt-2 space-y-4 text-base">
+                <div className="border-l-4 border-teal-400 pl-3">
+                  <strong className="text-teal-700">
+                    KPP (Korps Pelajar Putri):
+                  </strong>
+                  <ul className="list-disc list-inside ml-3">
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Komandan: Sekar Dwi Ningrum
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Wakil Komandan: Choirina Anggraini
+                    </li>
+                  </ul>
+                </div>
+                <div className="border-l-4 border-teal-400 pl-3">
+                  <strong className="text-teal-700">
+                    Lembaga Perekonomian:
+                  </strong>
+                  <ul className="list-disc list-inside ml-3">
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Fitrah Yuliani (Koord.)
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siti Nur Khoirunisa
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Siti Salma Agustina
+                    </li>
+                    <li className="py-1 hover:bg-teal-50 px-2 rounded transition-colors duration-200">
+                      Sayang Septiani Putri
                     </li>
                   </ul>
                 </div>
