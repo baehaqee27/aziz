@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PAC Bulu",
-  description: "Website resmi PAC IPNU IPPNU Bulu",
+  title: "Pelajar NU Bulu",
+  description: "Website resmi Pelajar NU Bulu",
 };
 
 export default function RootLayout({
