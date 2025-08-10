@@ -11,7 +11,7 @@ export default function HomePage() {
         <h1 className="text-5xl font-extrabold text-teal-800 mb-4 tracking-tight animate-fade-in-down">
           Media Aswaja untuk Generasi Berdaya
         </h1>
-        <p className="text-lg text-teal-600 font-medium mb-8 max-w-2xl mx-auto animate-fade-in-up">
+        <p className="text-lg text-justify text-teal-600 font-medium mb-8 max-w-2xl mx-auto animate-fade-in-up">
           <span className="font-bold text-teal-700">PELAJAR NU BULU</span>{" "}
           adalah portal informasi resmi yang dikelola oleh Pelajar NU Kecamatan
           Bulu, Kabupaten Rembang. Website ini hadir sebagai media digital yang

@@ -148,7 +148,7 @@ export default function NewsDetailPage() {
           </span>
         </div>
 
-        <div className="text-gray-700 text-base mb-6 whitespace-pre-line">
+        <div className="text-gray-700 text-base text-justify mb-6 whitespace-pre-line">
           {contentWithBreaks}
         </div>
 
